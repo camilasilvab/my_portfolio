@@ -95,6 +95,12 @@ blockquote:before, blockquote:after, q:before, q:after {
   font-size: 1.8rem;
 }
 
+.header-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px ;
+}
+
 .contact {
   padding: 12px 20px;
   border-radius: 5px;
@@ -103,7 +109,6 @@ blockquote:before, blockquote:after, q:before, q:after {
   font-weight: 700;
   color: var(--black);
   background-color: var(--red-solf);
-  margin-right: 22px;
 }
 
 .contact:hover {
@@ -114,7 +119,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 .download {
   padding: 12px 20px;
   border-radius: 5px;
-  margin-right: 22px;
   font-family: var(--tipo-principal);
   font-size: 1.4rem;
   font-weight: 700;
@@ -184,13 +188,10 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
   gap: 45px;
-  
-
+  justify-content: center;
 }
-
-
 
 .card-projects {
   padding: 22px 26px;
