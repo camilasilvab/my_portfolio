@@ -81,6 +81,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 .header-section h1 {
   font-size: 4.8rem;
   font-weight: 700;
+  color: var(--red);
 }
 
 .header-section h2 {
@@ -169,20 +170,27 @@ blockquote:before, blockquote:after, q:before, q:after {
   height: 30px;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.projects-conteiner {
   padding: 85px 60px 85px ;
-  gap: 45px;
   background-color: var(--white);
 }
 
-.projects h1 {
+.projects-conteiner h1 {
   width: 100%;
+  padding-bottom: 60px;
   text-align: start;
   font-size: 4.8rem;
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+  gap: 45px;
+  
+
+}
+
+
 
 .card-projects {
   padding: 22px 26px;
@@ -237,6 +245,48 @@ blockquote:before, blockquote:after, q:before, q:after {
   color: var(--red);
 }
 
-/* .form-section {
+/* __________________________________________ */
 
-} */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 85px 60px 45px ;
+  gap: 10px;
+  font-size: 2.6rem;
+}
+
+footer h3 {
+  padding-bottom: 30px;
+}
+
+.footer-links {
+  display: flex;
+/*   justify-content: center; */
+  gap: 30px;
+  color: var(--red);
+}
+
+.footer-links svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-links svg:hover {
+  color: var(--red-solf);
+}
+
+.footer-section {
+  padding-top: 80px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* _______Responsive ________ */
+
+@media (min-width: 600px) {
+
+  .header-section, .aboutMe, .projects-conteiner, footer {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
