@@ -277,9 +277,17 @@ footer h3 {
 }
 
 .footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding-top: 80px;
   font-size: 1.4rem;
   text-align: center;
+}
+
+.footer-section img {
+  width: 30px;
 }
 
 /* _______Responsive ________ */
